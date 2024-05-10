@@ -37,7 +37,7 @@ if __name__ == "__main__":
     # The full dataset (10M mols collected from Pubchem) can be downloaded from
     # https://arxiv.org/pdf/2010.09885.pdf
     molsuppl = Chem.SmilesMolSupplier(
-        args.pretrain_dpath + "pubchem-1k.txt", delimiter=","
+        args.pretrain_dpath + "pubchem-10k.txt", delimiter=","
     )
 
     if not os.path.exists(args.pretrain_graph_save_path + "pubchem_graph.npz"):
